@@ -1,0 +1,47 @@
+{
+  "name": "virtual-scroll-bar",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "big.js": "^7.0.1",
+    "lit": "^3.3.1",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.2.2",
+    "@types/lodash-es": "^4.17.12",
+    "typescript": "~5.9.3",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.1.14"
+    }
+  },
+  "files": [
+    "dist",
+    "types",
+    "package.json"
+  ],
+  "keywords": [
+    "virtual-scroll-bar",
+    "web component",
+    "scroll"
+  ],
+  "author": "lwxingkong@qq.com",
+  "license": "MIT",
+  "repository": "https://github.com/yyrjlw/virtual-scroll-bar"
+}
